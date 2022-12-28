@@ -7,7 +7,8 @@ To install and run the game, follow these steps:
 
 1. Download the repository and unzip the files.
 2. Open the index.html file in a web browser.
-Gameplay
+
+##  Gameplay
 To play the game, follow these steps:
 
 1. The game will generate a random number between 1 and 100.
