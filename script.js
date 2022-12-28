@@ -5,17 +5,27 @@ let secretNumber = Math.trunc(Math.random() * 100) + 1;
 
 let score = 100;
 
+let highestScore = 0;
+
 document.querySelector('.check').addEventListener('click', function () {
+  // get the user input
   const guess = Number(document.querySelector('.guess').value);
   if (!guess) {
     document.querySelector('.message').textContent = '⛔ No number entered';
   }
-  // The player wins
+
+  // the player wins
   else if (guess === secretNumber) {
     document.querySelector('.message').textContent =
       '🍾You guessed the right number\ncongratulations';
     document.querySelector('body').style.backgroundColor = '#60b347';
     document.querySelector('.number').style.width = '30rem';
+    // check if need to update highest score
+    if (score > highestScore) {
+      highestScore = score;
+      document.querySelector('.label-highscore').textContent =
+        '🥇 Highscore: ' + highestScore;
+    }
   } else if (guess > secretNumber) {
     document.querySelector('.message').textContent = '📈Too high';
     wrongGuess();
