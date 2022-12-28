@@ -20,6 +20,7 @@ document.querySelector('.check').addEventListener('click', function () {
       '🍾You guessed the right number\ncongratulations';
     document.querySelector('body').style.backgroundColor = '#60b347';
     document.querySelector('.number').style.width = '30rem';
+    document.querySelector('.number').textContent = secretNumber;
     // check if need to update highest score
     if (score > highestScore) {
       highestScore = score;
@@ -42,6 +43,7 @@ document.querySelector('.again').addEventListener('click', function () {
   score = 100;
   document.querySelector('.score').textContent = score;
   document.querySelector('.guess').value = '';
+  document.querySelector('.number').textContent = '?';
 });
 
 function wrongGuess() {
