@@ -24,4 +24,4 @@ The game has a simple GUI with an input field and a "Check" button. The player c
 If you are experiencing any issues with the game, try refreshing the page. If the problem persists, please contact me for assistance.
 
 ## Credits
-This game was created by Gal Ben Artzi and was inspired by the classic "Guess My Number" game. The GUI was written in JavaScript and the game was tested in the latest version of Google Chrome.
+This game was created by Gal Ben Artzi and was inspired by the classic "Guess My Number" game.
